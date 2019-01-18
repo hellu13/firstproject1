@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<h3 class="font-weight-bold">안녕하세요, 여기서 글자를 세세요!</h1>
+
+<a href="{%url 'about'%}" class="text-decoration-none">ABOUT</a>
+
+<form action="{%url 'result'%}">
+    <textarea id="myText" cols="40" rows="10" name="fulltext" class="form-control" placeholder="여기에 입력하세요"></textarea>
+    <br>
+    <input type="submit" value="Count!" class="btn btn-secondary">
+</form>
+<button onclick="document.getElementById('myText').value=''" class="btn btn-primary">Clear!!</button>
